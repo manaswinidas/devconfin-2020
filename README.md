@@ -349,5 +349,5 @@ mvn clean verify quarkus:dev
 ## Resources
 
 - [Kogito Wiki](https://github.com/kiegroup/kogito-runtimes/wiki)
-- [Workshop Feedback - we want to hear back from you](https://forms.gle/ow6PbxT7zuqXCjrt8)
 - [More about creating projects using Kogito](https://docs.jboss.org/kogito/release/latest/html_single/#proc-kogito-creating-project_kogito-creating-running)
+- [Workshop Feedback - we want to hear back from you](https://forms.gle/ow6PbxT7zuqXCjrt8)
