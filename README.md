@@ -6,8 +6,8 @@ Table of Contents
 =================
 
 * [1) Pre requisites](#1-pre-requisites)
-* [2) Install the Kogito Extension in VSCode](#2-install-the-kogito-extension-in-vscode)
-* [3) Open the kogito travel agency project in VSCode](#3-open-the-kogito-travel-agency-project-in-vscode)
+* [2) Clone and Open the kogito travel agency project in VSCode](#2-clone-and-open-the-kogito-travel-agency-project-in-vscode)
+* [3) Install the Kogito Extension in VSCode](#3-install-the-kogito-extension-in-vscode)
 * [4) Look at the business logic for the Hotel Booking](#4-look-at-the-business-logic-for-the-hotel-booking)
 * [5) Look at the business logic for the Flight Booking](#5-look-at-the-business-logic-for-the-flight-booking)
 * [6) Look at the business logic for the Travel Request](#6-look-at-the-business-logic-for-the-travel-request)
@@ -20,7 +20,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
 ## 1) Pre requisites
 
-Make sure that you have everything set and installed before continue:
+Make sure that you have everything set and installed before continuing:
 
 - [OpenJDK 11+](https://computingforgeeks.com/how-to-install-java-11-openjdk-11-on-rhel-8)
 - [VSCode 1.46.0+](https://code.visualstudio.com/docs/setup/linux)
@@ -29,12 +29,9 @@ Make sure that you have everything set and installed before continue:
 - [Maven 3.6.0+](https://maven.apache.org/install.html)
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
+## 2) Clone and Open the kogito travel agency project into VSCode
 
-## 2) Install the Kogito Extension in VSCode
-
-Search for Kogito Bundle VSCode extension in Visual Studio Marketplace and install it. Link: https://marketplace.visualstudio.com/items?itemName=kie-group.vscode-extension-kogito-bundle
-
-## 3) Open the kogito travel agency project into VSCode
+To clone: `git clone git@github.com:manaswinidas/devconfin-2020.git` or you may clone using HTTPS too.
 
 Run the following command on your terminal:
 
@@ -45,14 +42,19 @@ code kogito-travel-agency
 `kogito-travel-agency` is the project folder.
 
 Alternatively,
+
 1. Open Visual Studio Code
 2. Go to "File", "Add Folder to Workspace"
 3. Select the Folder `kogito-travel-agency` in your file system
 4. Click "Add"
 
+## 3) Install the Kogito Extension in VSCode
+
+Search for Kogito Bundle VSCode extension in Visual Studio Marketplace and install it. Link: https://marketplace.visualstudio.com/items?itemName=kie-group.vscode-extension-kogito-bundle
+
 ## 4) Look the business logic for the Hotel Booking
 
-![alt text](docs/hotelbooking.png)
+![alt text](kogito-travel-agency/docs/hotelbooking.png)
 
 1. On `src/main/resources/org/acme/travel`, there is a BPMN file named `hotelBooking.bpmn2` for the Hotel booking sub-process. Since you have installed an extension, VSCode will automatically open a BPMN editor for you. Using the BPMN editor, look at the following process attributes (properties panel on right side):
 
@@ -83,7 +85,7 @@ Alternatively,
 
 ## 5) Look at the business logic for the Flight Booking
 
-![alt text](docs/flightbooking.png)
+![alt text](kogito-travel-agency/docs/flightbooking.png)
 
 1. Inside `src/main/resources/org/acme/travel`, there is another BPMN file named `flightBooking.bpmn2` for the Flight booking sub-process. Using the BPMN editor, have a look at the following process attributes (properties panel on right side):
 
@@ -114,7 +116,7 @@ Alternatively,
 
 ## 6) Look at the business logic for the Travel Request
 
-![alt text](docs/travels.png)
+![alt text](kogito-travel-agency/docs/travels.png)
 
 1. Inside `src/main/resources/org/acme/travel`, there is a BPMN file for the Travels process called `travels.bpmn2`. Using the BPMN editor, have a the following process attributes (properties panel on right side):
 
@@ -349,4 +351,3 @@ mvn clean verify quarkus:dev
 - [Kogito Wiki](https://github.com/kiegroup/kogito-runtimes/wiki)
 - [Workshop Feedback - we want to hear back from you](https://forms.gle/ow6PbxT7zuqXCjrt8)
 - [More about creating projects using Kogito](https://docs.jboss.org/kogito/release/latest/html_single/#proc-kogito-creating-project_kogito-creating-running)
-
