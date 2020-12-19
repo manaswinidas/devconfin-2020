@@ -1,0 +1,9 @@
+apiVersion: app.kiegroup.org/v1beta1
+kind: KogitoSupportingService
+metadata:
+  name: mgmt-console
+spec:
+  # Type of the supporting service
+  serviceType: MgmtConsole
+  # For more information please read: https://docs.jboss.org/kogito/release/latest/html_single/#con_kogito-travel-agency
+  replicas: 1
